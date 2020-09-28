@@ -31,3 +31,17 @@ $color-btn-cool:        $blue;
     @extend %btn;
     background: $color-btn-hot;
 }
+
+.grid {
+    margin-top: 10px;
+    @include clearfix;
+    .item {
+        float: left;
+        @include imageGrid(5, 1%);
+    }
+    img {
+        display: block;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+}

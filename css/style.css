@@ -345,6 +345,27 @@ h1, h2, h3, h4, h5, h6 {
 .btn-hot {
   background: #D14348; }
 
+.grid {
+  margin-top: 10px; }
+  .grid:before, .grid:after {
+    content: '';
+    display: table; }
+  .grid:after {
+    clear: both; }
+  .grid .item {
+    float: left;
+    width: 19.2%; }
+    .grid .item:nth-child(n) {
+      margin-right: 1%;
+      margin-bottom: 1%; }
+    .grid .item:nth-child(5n) {
+      margin-right: 0;
+      margin-bottom: 0; }
+  .grid img {
+    display: block;
+    border-radius: 10px;
+    max-width: 100%; }
+
 .background {
   color: #EEE8D6;
   margin: 20px 0;
