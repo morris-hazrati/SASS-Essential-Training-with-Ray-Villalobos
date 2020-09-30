@@ -31,3 +31,9 @@ $bgPos: center center
         margin-bottom: 0;
     } 
 }
+
+@mixin break($length) {
+    @media (min-width: $length) {
+        @content;
+    }
+}
