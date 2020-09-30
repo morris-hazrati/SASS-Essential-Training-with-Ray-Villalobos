@@ -341,7 +341,7 @@ h6 {
   width: 80%;
   margin: 0 auto; }
 
-.btn-default, .btn-hot, .btn-cool {
+.btn-default, .btn-hot, .btn-cool, .btn-awesome {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -356,12 +356,23 @@ h6 {
 
 .btn-default {
   background-color: #022933; }
+  .btn-default:hover {
+    background-color: #000202; }
 
 .btn-hot {
   background-color: #D14348; }
+  .btn-hot:hover {
+    background-color: #b52c31; }
 
 .btn-cool {
   background-color: #0076A3; }
+  .btn-cool:hover {
+    background-color: #005170; }
+
+.btn-awesome {
+  background-color: #6D73C2; }
+  .btn-awesome:hover {
+    background-color: #4a52b2; }
 
 .grid {
   margin-top: 10px; }

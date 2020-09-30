@@ -19,15 +19,21 @@ $roundness: 20px 0 20px 0;
     color: $color-btn-text;
 }
 
-$color-btn-names: 'default', 'hot', 'cool';
-$color-btn-values: $color-main, $red, $blue;
 
-@each $name in $color-btn-names {
-    $i: index($color-btn-names, $name);
+$color-btns: (
+    default: $color-main,
+    hot: $red,
+    cool: $blue,
+    awesome: $purple
+);
 
-    .btn-#{$name} {
+@each $key, $value in $color-btns {
+    .btn-#{$key} {
         @extend %btn;
-        background-color: nth($color-btn-values, $i);
+        background-color: $value;
+        &:hover{
+            background-color: darken($value, 10%);
+        }
     }
 }
 
