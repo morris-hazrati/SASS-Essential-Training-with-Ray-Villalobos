@@ -341,7 +341,7 @@ h6 {
   width: 80%;
   margin: 0 auto; }
 
-.btn-default, .btn-cool, .btn-hot {
+.btn-default, .btn-hot, .btn-cool {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -355,13 +355,13 @@ h6 {
   color: #EEE8D6; }
 
 .btn-default {
-  background: #022933; }
-
-.btn-cool {
-  background: #0076A3; }
+  background-color: #022933; }
 
 .btn-hot {
-  background: #D14348; }
+  background-color: #D14348; }
+
+.btn-cool {
+  background-color: #0076A3; }
 
 .grid {
   margin-top: 10px; }
