@@ -32,8 +32,15 @@ $bgPos: center center
     } 
 }
 
-@mixin break($length) {
-    @media (min-width: $length) {
-        @content;
+@mixin break($arg...) {
+    @if length($arg) == 1 {
+        @media (min-width: nth($arg, 1)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: nth($arg, 1)) and (max-width: nth($arg, 2)) {
+            @content;
+        }
     }
+    
 }
